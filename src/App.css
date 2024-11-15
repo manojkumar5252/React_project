@@ -1,0 +1,167 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Header Styles */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Main Container */
+.container {
+  max-width: 600px;
+  width: 90%;
+  background-color: #fff;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Heading */
+h1 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input Field */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Button Styling */
+button {
+  padding: 12px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Country Information Section */
+.country-info {
+  margin-top: 30px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.country-info h2 {
+  font-size: 1.8em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.country-info p {
+  font-size: 1.1em;
+  color: #555;
+  margin: 5px 0;
+}
+
+.country-info p strong {
+  color: #333;
+}
+
+/* Image Styling for Flag and Coat of Arms */
+.flag, .coat-of-arms {
+  display: block;
+  margin: 20px auto;
+  width: 120px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Link Styling */
+.country-info a {
+  display: inline-block;
+  margin-top: 20px;
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.country-info a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  button {
+    width: 100%;
+  }
+}
